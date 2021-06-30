@@ -17,7 +17,6 @@ mongoose.connect("mongodb+srv://saurav:saurav321@bugdebug.pueox.mongodb.net/myFi
 // DataBase Models...
 var Comment    = require("./models/comment"),
     Post = require("./models/post"),
-    // seedDb     = require('./seeds'),
     User       = require("./models/user");
 
 
@@ -36,8 +35,6 @@ app.use(express.static("public"));
 app.use(methodOverride("_method"));
 app.use(flash());
 app.use(sanitizer());
-
-// seedDb();
 
 
 // ===========================
